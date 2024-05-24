@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<title>Students Data</title>
+<link rel="stylesheet" href="/css/style.css">
+
+<head>
+    <!-- Other head elements -->
+    <style>
+        .btn-small {
+            font-size: 0.6rem; /* Adjust the font size as needed */
+            padding: 0.25rem 0.5rem; /* Adjust the padding to decrease the height */
+        }
+    </style>
+</head>
+
+
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light">
+<h1>Students Data</h1>
+<button class="btn btn-danger" type="button" onclick="newStudent('main')">Add New Student (Table 1)</button>
+<button class="btn btn-success" type="button" onclick="newStudent('otherTable')">Add New Student (Table 2)</button>
+</nav>
+<div class="container mt-5">
+<div class="row">
+<div class="col-md-6 offset-md-3">
+<div class="input-group mb-3">
+<input type="text" class="form-control" placeholder="Search..." id="search">
+<div class="input-group-append">
+<button class="btn btn-primary" type="button" onclick="search()">Search</button>
+</div>
+</div>
+</div>
+</div>
+<table class="table table-bordered" id="table">
+<thead>
+<tr>
+<th>Serial</th>
+<th>Name</th>
+<th>Roll</th>
+<th>Current Semester</th>
+<th>SGPA 1</th>
+<th>SGPA 2</th>
+<th>SGPA 3</th>
+<th>Active Backlog</th>
+<th>Average</th>
+<th>Percentage</th>
+<th>Subject</th>
+<th>Action</th>
+</tr>
+</thead>
+<tbody id="main">
+</tbody>
+</table>
+
+<table class="table table-bordered" id="otherTable">
+<thead>
+<tr>
+<th>Serial</th>
+<th>Name</th>
+<th>Roll</th>
+<th>Current Semester</th>
+<th>SGPA 1</th>
+<th>SGPA 2</th>
+<th>SGPA 3</th>
+<th>SGPA 4</th>
+<th>Active Backlog</th>
+<th>Average</th>
+<th>Percentage</th>
+<th>Subject</th>
+<th>Action</th>
+</tr>
+</thead>
+<tbody id="otherTableBody">
+</tbody>
+</table>
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+<script src="sweetalert2.all.min.js"></script>
+<script src="/javascript/ece3.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,46 @@
+.navbar {
+    background-color: #1E90FF;
+    justify-content: space-between;
+    }
+    h1 {
+    padding: 15px;
+    font-size: 30px;
+    color: white;
+    }
+    .btn {
+    padding: 15px;
+    font-size: 20px;
+    background-color: black;
+    border-radius: 30px;
+    border: 1px solid black;
+    }
+    .form-control {
+    padding: 30px;
+    font-size: 20px;
+    border: 1px solid black;
+    border-radius: 30px;
+    background-color: #c3c3bf;
+    }
+    .table {
+    background-color: #c3c3bf;
+    font-weight: bold;
+    text-align: center;
+    font-size: 15px;
+    }
+    thead {
+    background-color: #1E90FF;
+    }
+    .delBtn {
+    border-radius: 20px;
+    border: 1px solid black;
+    background-color: #FF0000;
+    }
+    /* .......................................... */
+    @media only screen and (max-width: 768px) {
+    .navbar {
+    width: 930px;
+    }
+    .input-group {
+    width: 470px;
+    }
+    }
